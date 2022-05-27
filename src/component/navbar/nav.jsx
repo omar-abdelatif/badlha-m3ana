@@ -1,13 +1,13 @@
 import { Link, NavLink } from 'react-router-dom';
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container">
-                <Link className="navbar-brand" to="/">بدلها معانا</Link>
+                <Link className="navbar-brand" to="/">بدلها معايا</Link>
                 <button className="btn btn-primary menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                     <i className="fad fa-bars"></i>
                 </button>
-                <div className="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div className="offcanvas offcanvas-top" tabIndex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                     <div className="offcanvas-header">
                         <h5 id="offcanvasTopLabel">Offcanvas top</h5>
                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -16,28 +16,65 @@ function Navbar() {
                         <div className="areas">
                             <select name="" id="" className="form-control">
                                 <option value="">المنطقة</option>
-                                <option value="">الرياض</option>
-                                <option value="">الجدة</option>
-                                <option value="">الحائل</option>
-                                <option value="">الحدود الشمالية</option>
-                                <option value="">الخرطوم</option>
-                                <option value="">المدينة المنورة</option>
+                                <option value="">القاهرة</option>
+                                <option value="">الجيزة</option>
+                                <option value="">الأسكندرية</option>
+                                <option value="">الدقهلية</option>
+                                <option value="">الشرقية</option>
+                                <option value="">المنوفية</option>
+                                <option value="">القليوبية</option>
+                                <option value="">البحيرة</option>
+                                <option value="">الغربية</option>
+                                <option value="">بور سعيد</option>
+                                <option value="">دمياط</option>
+                                <option value="">الإسماعلية</option>
+                                <option value="">السويس</option>
+                                <option value="">كفر الشيخ</option>
+                                <option value="">الفيوم</option>
+                                <option value="">بني سويف</option>
+                                <option value="">مطروح</option>
+                                <option value="">شمال سيناء</option>
+                                <option value="">جنوب سيناء</option>
                                 <option value="">المنيا</option>
-                                <option value="">المنيا الغربية</option>
+                                <option value="">أسيوط</option>
+                                <option value="">سوهاج</option>
+                                <option value="">قنا</option>
+                                <option value="">البحر الأحمر</option>
+                                <option value="">الأقصر</option>
+                                <option value="">أسوان</option>
+                                <option value="">الواحات</option>
                                 <option value="">الوادي الجديد</option>
-                                <option value="">الوادي الغربي</option>
-                                <option value="">الوادي الغربي الجديد</option>
-                                <option value="">الوادي الغربي الشمالي</option>
-                                <option value="">الوادي الغربي الشمالي الجديد</option>
-                                <option value="">الوادي الغربي الشمالي الجديد</option>
-                                <option value="">الوادي الغربي الشمالي الجديد</option>
                             </select>
                         </div>
-                        <form className="d-flex">
+                        <form className="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
                         </form>
-                        <ul className="navbar-nav">
+                        <div className="login">
+                            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                تسجيل الدخول
+                            </button>
+                            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div className="modal-body">
+                                            ...
+                                        </div>
+                                        <div className="modal-footer">
+                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" className="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="sell">
+                            <NavLink to="/sell" className="btn btn-outline-warning">بدل</NavLink>
+                        </div>
+                        {/* <ul className="navbar-nav">
                             <li className="nav-item">
                                 <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
                             </li>
@@ -55,7 +92,7 @@ function Navbar() {
                                     <li><NavLink className="dropdown-item" to="/">Something else here</NavLink></li>
                                 </ul>
                             </li>
-                        </ul>
+                        </ul> */}
 
                     </div>
                 </div>
