@@ -2,31 +2,51 @@
 *{
   scroll-behavior: smooth;
 }
-input, button, a{
+input, button, a, select{
   box-shadow: none !important;
 }
 h1, h2, h3, h4, h5, h6{
   margin-bottom: 0;
 }
+p{
+  margin-bottom: 0;
+}
+::selection{
+  background: #d6da0b;
+  color: #000;
+}
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 /* NavBar */
 .menu{
   display: none;
 }
 .navbar-brand{
-  font-size: 1.6em;
+  font-size: 2.5em;
   font-weight: bolder;
+  font-family: Lalezar;
 }
 .navbar-brand:focus{
   outline: none !important;
 }
 .areas, .search, .login, .sell{
-  margin-right: 60px;
+  margin-right: 45px;
 }
 .areas select{
-  width: 200px;
+  width: 250px;
 }
 .search input{
   width: 350px;
+}
+.areas ::-webkit-scrollbar{
+  width: 0px;
+}
+.areas option{
+  padding: 10px 0 !important;
+}
+.areas option:hover{
+  background: #d6da0b;
+  color: #000;
 }
 /* SLOGAN */
 .slogan{
@@ -34,4 +54,46 @@ h1, h2, h3, h4, h5, h6{
   height: 200px;
   width: 100%;
 }
-/*  */
+/* Categories */
+.categories{
+  padding: 50px 0;
+}
+.cat-item-icon{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.cat-item-icon i{
+  font-size: 1.7em;
+  color: #fff;
+}
+.cat-item h6{
+  margin-top: 10px;
+  text-align: center;
+}
+/* FOOTER */
+footer{
+  background: grey;
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer span{
+  color: #fff;
+}
+footer a {
+  margin-left: 5px;
+  padding: 0 !important;
+  color: #fff !important;
+  font-size: 1.1rem !important;
+}

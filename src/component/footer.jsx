@@ -1,12 +1,10 @@
 function Footer() {
     return (
-        <footer>
+        <footer dir="ltr">
             <div className="container">
                 <div className="footer-content">
-                    <span>
                         Designed and Developed By
-                        <a href="https://www.facebook.com/omar.elmalek.5">Omar Abdelatif</a>
-                    </span>
+                    <a className="btn" href="https://www.facebook.com/omar.elmalek.5">Omar Abdelatif</a>
                 </div>
             </div>
         </footer>
