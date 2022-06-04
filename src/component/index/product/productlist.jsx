@@ -1,31 +1,28 @@
 import { Link } from 'react-router-dom';
-function ProductList() {
-    const List = [
-        {
-            name: 'Playstation5',
-            price: '100',
-            image: 'data:image/jpeg;base64,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',
-        }
-    ]
+function ProductList({ data }) {
     return (
         <section className="product-list">
-            <div className="container-fluid">
-                <div className="row">
-                    {List.map(list => (
-                        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12" key={list.name}>
+            <div className="container">
+                <div className="row justify-content-center">
+                    {data.map(list => (
+                        <div className="col-xl-3 col-md-4 col-sm-6 col-xs-12" key={list.name}>
                             <div className="product-item">
-                                <div className="product-thumb">
+                                <div className="product-thumb text-center">
                                     <Link to={`/product/${list.name}`}>
-                                        <img src={list.image} alt="" />
+                                        <img src={list.img} alt={list.name} />
                                     </Link>
                                 </div>
                                 <div className="product-info">
-                                    <div className="product-texts">
-                                        <div className="time"></div>
-                                        <div className="location"></div>
+                                    <div className="product-texts text-center">
+                                        <div className="time">
+                                            <span className="time-text">{list.date}</span>
+                                        </div>
+                                        <div className="location">
+                                            <span className="location-text">{list.city}</span>
+                                        </div>
                                     </div>
-                                    <h3 className="product-title">
-                                        <Link to={`/products/${list.name}`}>{list.name}</Link>
+                                    <h3 className="text-center product-title">
+                                        <Link className='btn' to={`/product/${list.name}`}>{list.name}</Link>
                                     </h3>
                                 </div>
                             </div>

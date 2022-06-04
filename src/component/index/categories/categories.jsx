@@ -5,83 +5,77 @@ function Categories() {
             id: 1,
             icon: 'fad fa-car-alt',
             class: 'cat-item-icon bg-primary',
-            title: 'سيارات',
-        },
-        {
-            id: 2,
-            icon: 'fad fa-house',
-            class: 'cat-item-icon bg-warning',
-            title: 'عقارات',
+            catname: 'سيارات',
         },
         {
             id: 3,
             icon: 'fad fa-tshirt',
             class: 'cat-item-icon bg-success',
-            title: 'ملابس',
+            catname: 'ملابس',
         },
         {
             id: 4,
             icon: 'fad fa-gamepad',
             class: 'cat-item-icon bg-danger',
-            title: 'ألعاب',
+            catname: 'ألعاب',
         },
         {
             id: 5,
             icon: 'fad fa-mobile-alt',
             class: 'cat-item-icon bg-info',
-            title: 'موبيلات',
+            catname: 'موبيلات',
         },
         {
             id: 6,
             icon: 'fad fa-dumbbell',
             class: 'cat-item-icon bg-dark',
-            title: 'رياضة',
+            catname: 'رياضة',
         },
         {
             id: 7,
             icon: 'fad fa-dog-leashed',
             class: 'cat-item-icon bg-secondary',
-            title: 'حيوانات',
+            catname: 'حيوانات',
         },
         {
             id: 8,
             icon: 'fad fa-tools',
             class: 'cat-item-icon bg-primary bg-gradient',
-            title: 'ادوات',
+            catname: 'ادوات',
         },
         {
             id: 9,
             icon: 'fad fa-laptop',
             class: 'cat-item-icon bg-warning bg-gradient',
-            title: 'إلكترونيات',
+            catname: 'إلكترونيات',
         },
         {
             id: 10,
             icon: 'fad fa-baby-carriage',
             class: 'cat-item-icon bg-success bg-gradient',
-            title: 'أطفال',
+            catname: 'أطفال',
         },
         {
             id: 11,
             icon: 'fad fa-couch',
             class: 'cat-item-icon bg-danger bg-gradient',
-            title: 'أثاث',
+            catname: 'أثاث',
         },
     ]
     return (
         <section className="categories">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <div className="row">
                             {catArr.map(item => (
                                 <div className="col" key={item.id}>
                                     <div className="cat-item">
-                                        <Link className='btn' to={`/categories/${item.id}`}>
+                                        <Link className='btn' to={`/categories/${item.catname}`}>
                                             <div className={item.class}>
                                                 <i className={item.icon}></i>
                                             </div>
-                                            <h6>{item.title}</h6>
+                                            <h6>{item.catname}</h6>
                                         </Link>
                                     </div>
                                 </div>
