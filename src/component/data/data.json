@@ -143,43 +143,55 @@
             "name": "Cheese Cheddar",
             "date": "25-11-2021",
             "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
-            "city": "Kupiskis"
+            "city": "شبرا الخيمة"
         },
         {
             "name": "Oil Canola",
             "date": "14-06-2021",
             "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
-            "city": "Firmat"
+            "city": "المنيل"
         },
         {
             "name": "Clams Canned",
             "date": "08-08-2021",
             "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
-            "city": "Stenungsund"
+            "city": "الهرم"
         },
         {
             "name": "Ecolab Hobart",
             "date": "12-06-2021",
             "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
-            "city": "Santa Teresa"
+            "city": "بولاق"
         },
         {
             "name": "Stainless Steel ",
             "date": "30-11-2021",
             "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
-            "city": "Sitangkai"
+            "city": "المهندسين"
         },
         {
             "name": "Towel Dispenser",
             "date": "16-09-2021",
             "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
-            "city": "Tauranga"
+            "city": "ميت غمر"
         },
         {
             "name": "Passion Fruit",
             "date": "10-01-2022",
             "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
-            "city": "Bhimbar"
+            "city": "مصر القديمة"
+        },
+        {
+            "name": "Fruit",
+            "date": "11-03-2021",
+            "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
+            "city": "طره"
+        },
+        {
+            "name": "Passion",
+            "date": "11-11-2021",
+            "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
+            "city": "المعصره"
         }
     ],
     "Categories": [
