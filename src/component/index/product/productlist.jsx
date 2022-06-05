@@ -4,7 +4,7 @@ function ProductList({ data }) {
         <section className="product-list">
             <div className="container">
                 <div className="row justify-content-center">
-                    {data.map(list => (
+                    {data.ProductList.map(list => (
                         <div className="col-xl-3 col-md-4 col-sm-6 col-xs-12" key={list.name}>
                             <div className="product-item">
                                 <div className="product-thumb text-center">
@@ -16,9 +16,11 @@ function ProductList({ data }) {
                                     <div className="product-texts text-center">
                                         <div className="time">
                                             <span className="time-text">{list.date}</span>
+                                            <i className="fad fa-clock"></i>
                                         </div>
                                         <div className="location">
                                             <span className="location-text">{list.city}</span>
+                                            <i className="fad fa-map-marker-alt"></i>
                                         </div>
                                     </div>
                                     <h3 className="text-center product-title">
