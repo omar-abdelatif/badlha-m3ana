@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 function Navbar() {
     return (
-        <nav>
+        <nav id='navbar'>
             <div className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
                     <Link className="navbar-brand" to="/">بدلها معايا</Link>
@@ -102,7 +102,6 @@ function Navbar() {
                 </div>
             </div>
         </nav>
-
     );
 }
 
