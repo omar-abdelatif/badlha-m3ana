@@ -15,9 +15,29 @@ function ProductDetails({ data }) {
                 <div className="row">
                     <div className="col-12">
                         {Product && (
-                            <div className="content-section">
-                                <div className="share-section"></div>
-                                <div className="thumbnail"></div>
+                            <div className="content-section text-right">
+                                <div className="share-section">
+                                    <ul>
+                                        <li>
+                                            <a href="/">
+                                                <i className="fab fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i className="fab fa-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i className="fas fa-link"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="thumbnail">
+                                    <img src={Product.img} alt={Product.name} />
+                                </div>
                                 <div className="text-data">
                                     <h1>{Product.name}</h1>
                                 </div>
@@ -26,7 +46,6 @@ function ProductDetails({ data }) {
                     </div>
                 </div>
             </div>
-            <h1>this is {name} product</h1>
         </section>
     );
 }

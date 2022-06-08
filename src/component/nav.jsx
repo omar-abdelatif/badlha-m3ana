@@ -61,8 +61,8 @@ function Navbar() {
                             <div className="lang">
                                 <select name="" id="" className="form-control">
                                     <option value="">اللغة</option>
-                                    <option value="eng">English</option>
                                     <option value="ar">Arabic</option>
+                                    <option value="eng">English</option>
                                 </select>
                             </div>
                         </div>
