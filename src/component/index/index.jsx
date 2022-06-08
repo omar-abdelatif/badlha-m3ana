@@ -15,7 +15,7 @@ function Index({ data }) {
             <div className="product-item">
                 <div className="product-thumb text-center">
                     <Link to={`/product/${product.name}`}>
-                        <img src={product.img} alt={product.name} />
+                        <img width={270} height={270} src={product.img} alt={product.name} />
                     </Link>
                 </div>
                 <div className="product-info">
