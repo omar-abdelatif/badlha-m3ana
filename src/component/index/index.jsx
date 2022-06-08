@@ -6,7 +6,7 @@ import Slogan from './slogan';
 import ProductList from './product/productlist';
 function Index({ data }) {
     // console.log(data);
-    const [products, setProducts] = useState(data.ProductList.slice(0, 30));
+    const [products] = useState(data.ProductList.slice(0, 30));
     const [pageNumber, setPageNumber] = useState(0);
     const productsPerPage = 10;
     const pageVisited = pageNumber * productsPerPage;
@@ -39,7 +39,6 @@ function Index({ data }) {
     const pageCount = Math.ceil(products.length / productsPerPage);
     function changepage({ selected }) {
         setPageNumber(selected);
-        // setProducts();
     }
     return (
         <React.Fragment>

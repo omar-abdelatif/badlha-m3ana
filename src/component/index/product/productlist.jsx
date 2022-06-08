@@ -1,5 +1,4 @@
 import ReactPaginate from 'react-paginate';
-
 function ProductList({ displayproducts, pagecount, changePage }) {
     return (
         <section className="product-list">
@@ -16,17 +15,16 @@ function ProductList({ displayproducts, pagecount, changePage }) {
                         onPageChange={changePage}
                         containerClassName={'pagination'}
                         subContainerClassName={'pages pagination'}
-                        // activeClassName={'activePagination'}
                         previousLinkClassName={'previousBttn'}
                         nextLinkClassName={'nextBttn'}
                         disabledClassName={'disabledPagination'}
                         activeLinkClassName={'activePagination'}
-                        // pageLinkClassName={'pageBttn'}
                         pageClassName={'pageBttn'}
+                        pageLinkClassName={'pageLink'}
                     />
                 </div>
             </div>
-        </section >
+        </section>
     );
 }
 
