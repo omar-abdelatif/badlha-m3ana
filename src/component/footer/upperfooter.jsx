@@ -1,31 +1,22 @@
-function Footer() {
+function UpperFooter() {
     return (
-        <footer dir="ltr">
+        <section className="upper-footer" dir="ltr">
             <div className="container">
                 <div className="row justify-content-center footer-content">
                     <div className="col-lg-4">
                         <div className="follow">
-                            <h5 className="text-center">تابعنا</h5>
-                            <div className="social-links">
-                                <a href="https://www.facebook.com/">
+                            <h5 className="text-center footer-title">تابعنا</h5>
+                            <div className="list-unstyled text-center social-links">
+                                <a className="btn" href="https://www.facebook.com/">
                                     <i className="fab fa-facebook"></i>
-                                </a>
-                                <a href="https://twitter.com/">
-                                    <i className="fab fa-twitter"></i>
-                                </a>
-                                <a href="https://www.instagram.com/">
-                                    <i className="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/">
-                                    <i className="fab fa-linkedin"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4">
                         <div className="info">
-                            <h5 className="text-center">معلومات</h5>
-                            <ul className="list-unstyled">
+                            <h5 className="text-center footer-title">معلومات</h5>
+                            <ul className="list-unstyled text-center">
                                 <li>
                                     <a className="btn" href="/">الشروط والأحكام</a>
                                 </li>
@@ -37,8 +28,8 @@ function Footer() {
                     </div>
                     <div className="col-lg-4">
                         <div className="links">
-                            <h5 className="text-center">روابط</h5>
-                            <ul className="list-unstyled">
+                            <h5 className="text-center footer-title">روابط</h5>
+                            <ul className="list-unstyled text-center">
                                 <li>
                                     <a className="btn" href="/">من نحن</a>
                                 </li>
@@ -49,13 +40,9 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="copyright-footer">
-                        Designed and Developed By
-                    <a className="btn" href="https://www.facebook.com/omar.elmalek.5">Omar Abdelatif</a>
-                </div>
             </div>
-        </footer>
+        </section>
     );
 }
 
-export default Footer;
+export default UpperFooter;

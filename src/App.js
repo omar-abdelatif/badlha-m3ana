@@ -4,7 +4,8 @@ import Index from './component/index/index';
 import ProductDetails from './component/index/product/productdetails';
 import CategoriesData from './component/index/categories/categoriesdata';
 import NewsLetter from './component/newsletter';
-import Footer from './component/footer';
+import UpperFooter from './component/footer/upperfooter';
+import Footer from './component/footer/footer';
 import Data from './component/data/data.json';
 import { Routes, Route } from 'react-router-dom';
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/categories/:catname" element={<CategoriesData />} />
       </Routes>
       <NewsLetter />
+      <UpperFooter />
       <Footer />
     </React.Fragment>
   );
