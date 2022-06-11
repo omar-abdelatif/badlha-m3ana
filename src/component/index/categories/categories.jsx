@@ -21,34 +21,9 @@ function Categories({ data }) {
                             <div className="col-12">
                                 <div className="areas">
                                     <select name="" id="" className="form-control">
-                                        <option value="">المنطقة</option>
-                                        <option value="">القاهرة</option>
-                                        <option value="">الجيزة</option>
-                                        <option value="">الأسكندرية</option>
-                                        <option value="">الدقهلية</option>
-                                        <option value="">الشرقية</option>
-                                        <option value="">المنوفية</option>
-                                        <option value="">القليوبية</option>
-                                        <option value="">البحيرة</option>
-                                        <option value="">الغربية</option>
-                                        <option value="">بور سعيد</option>
-                                        <option value="">دمياط</option>
-                                        <option value="">الإسماعلية</option>
-                                        <option value="">السويس</option>
-                                        <option value="">كفر الشيخ</option>
-                                        <option value="">الفيوم</option>
-                                        <option value="">بني سويف</option>
-                                        <option value="">مطروح</option>
-                                        <option value="">شمال سيناء</option>
-                                        <option value="">جنوب سيناء</option>
-                                        <option value="">المنيا</option>
-                                        <option value="">أسيوط</option>
-                                        <option value="">سوهاج</option>
-                                        <option value="">قنا</option>
-                                        <option value="">البحر الأحمر</option>
-                                        <option value="">الأقصر</option>
-                                        <option value="">أسوان</option>
-                                        <option value="">الوادي الجديد</option>
+                                        {data.Area.map(item => (
+                                            <option key={item.name} value={item.name}>{item.name}</option>
+                                        ))}
                                     </select>
                                 </div>
                             </div>

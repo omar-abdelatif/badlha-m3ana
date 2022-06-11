@@ -37,10 +37,6 @@ ul{
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
-/* BODY */
-body {
-	background-color: #5B95AA;
-}
 /* SCROLL */
 .scroll-btn {
 	position: fixed;
@@ -67,9 +63,6 @@ body {
 	transform: translateY(0);
 }
 /* NavBar */
-nav{
-	background-color: #095473;
-}
 .menu {
 	display: none;
 }
@@ -85,37 +78,54 @@ nav{
 	outline: none !important;
 }
 .areas,
-.search,
-.login,
-.sell {
+.search{
 	margin-right: 35px;
 }
 .login button{
 	border-radius: 50px;
+	font-weight: bold;
 }
 .sell a{
 	margin-left: 10px;
 	border-radius: 50px;
+	font-weight: bold;
+}
+.sell i{
+	margin-left: 10px;
 }
 .sell button{
 	border-radius: 50px;
+	font-weight: bold;
 }
 .areas{
 	margin-top: 30px;
 	margin-right: 0;
+	width: 350px;
 }
 .areas select {
-	width: 100%;
 	border-radius: 50px;
+	border: 2px solid #000;
+}
+.areas select:focus {
+	border-color: #d6da0b;
 }
 .areas option{
 	font-size: 1.2em;
 	font-weight: 300;
 	font-family: Rakkas;
 }
+.areas select:first-child{
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+.areas select:last-child{
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
 .search input {
-	width: 350px;
+	width: 450px;
 	border-radius: 50px;
+	font-weight: bold;
 }
 .areas ::-webkit-scrollbar {
 	display: none;
@@ -127,20 +137,18 @@ nav{
 	background: #d6da0b;
 	color: #000;
 }
-.lang{
-	margin-right: 20px;
-}
 .lang select{
 	border-radius: 50px;
 	width: 100px;
 	height: 40px;
+	font-weight: bold;
 }
 .fixed{
 	position: fixed;
 	top: 0px;
 	left: 0;
 	width: 100%;
-	background-color: #095473;
+	background-color: #fff;
 	z-index: 99999;
 	transition: all 0.5s;
 }
@@ -185,7 +193,7 @@ nav{
 }
 /* PRODUCT List */
 .product-item {
-	box-shadow: 0 0 25px #fff;
+	box-shadow: 0 0 25px #000;
 	border-radius: 50px;
 	margin-bottom: 30px;
 	width: fit-content;
@@ -195,16 +203,21 @@ nav{
 	border-top-right-radius: 50px;
 }
 .product-info{
-	background-color: #095473;
+	background-color: #fff;
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
+	padding: 10px;
 }
 .product-texts span {
 	font-size: 0.8em;
 	font-weight: 400;
-	padding-left: 5px;
+	color: #000;
+}
+.time span{
 	padding-right: 5px;
-	color: #fff;
+}
+.location span{
+	padding-right: 5px;
 }
 .product-title {
 	font-weight: bolder;
@@ -212,21 +225,24 @@ nav{
 }
 .product-title a {
 	font-size: 0.7em;
-	color: #fff;
+	color: #000;
 	font-weight: bold;
 	transition: all 0.2s;
 }
-.product-title a:hover{
-	color: #B9D6BC;
-}
 .product-texts {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: flex-start;
 	align-items: center;
 	padding: 10px 5px;
 }
 .product-texts i{
-	color: #fff;
+	color: #000;
+}
+.separator {
+	width: 1px;
+	height: 15px;
+	background-color: #333;
+	margin: 0 10px;
 }
 .pagination{
 	justify-content: center;
@@ -350,7 +366,7 @@ nav{
 }
 /* UPPER FOOTER */
 .upper-footer {
-	background: #818bc2;
+	background: #fff;
 	padding: 20px 0;
 }
 .footer-content{
@@ -366,24 +382,25 @@ nav{
 	font-size: 0.9rem !important;
 	transition: all 0.5s;
 	font-weight: 600;
+	color: #000;
 }
 .list-unstyled a:hover{
 	color: #d6da0b !important;
 }
 .social-links i{
 	font-size: 2rem;
-	color: #fff;
+	color: #000;
 	transition: all 0.5s;
 }
 .social-links i:hover{
 	color: #d6da0b;
 }
 .list-unstyled li a{
-	color: #fff;
+	color: #000;
 }
 /* FOOTER */
 footer {
-	background: grey;
+	background: #fff;
 	padding: 10px 0;
 	text-align: center;
 }
@@ -398,6 +415,9 @@ footer span {
 footer a {
 	margin-left: 5px;
 	padding: 0 !important;
-	color: #fff !important;
+	color: #000 !important;
 	font-size: 1.1rem !important;
+}
+footer a:hover{
+	color: #d6da0b !important;
 }

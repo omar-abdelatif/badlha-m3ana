@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollBtn from './scrollbtn';
 import Categories from './categories/categories';
-// import Slogan from './slogan';
+import Slogan from './slogan';
 import ProductList from './product/productlist';
 function Index({ data }) {
     // console.log(data);
@@ -19,14 +19,15 @@ function Index({ data }) {
                     </Link>
                 </div>
                 <div className="product-info">
-                    <div className="product-texts text-center">
+                    <div className="product-texts">
                         <div className="time">
-                            <span className="time-text">{product.date}</span>
                             <i className="fad fa-clock"></i>
+                            <span className="time-text">{product.date}</span>
                         </div>
+                        <div className="separator"></div>
                         <div className="location">
-                            <span className="location-text">{product.city}</span>
                             <i className="fad fa-map-marker-alt"></i>
+                            <span className="location-text">{product.city}</span>
                         </div>
                     </div>
                     <h3 className="text-center product-title">
@@ -43,7 +44,7 @@ function Index({ data }) {
     return (
         <React.Fragment>
             <ScrollBtn />
-            {/* <Slogan /> */}
+            <Slogan />
             <Categories data={data} />
             <ProductList data={data} displayproducts={displayProducts} pagecount={pageCount} changePage={changepage} />
         </React.Fragment>

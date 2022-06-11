@@ -15,11 +15,15 @@ function Navbar() {
                         </div>
                         <div className="offcanvas-body nav-data">
                             <form className="search">
-                                <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
+                                <input className="form-control" type="search" placeholder="أبحث عن الإعلان هنا" aria-label="Search" />
                             </form>
                             <div className="sell">
-                                <Link to="/sell" className="btn btn-outline-warning">تبديل</Link>
-                                <button type="button" className="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <Link to="/sell" className="btn btn-warning">
+                                    <i className="fad fa-sync"></i>
+                                    تبديل
+                                </Link>
+                                <button type="button" className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i className="fad fa-camera"></i>
                                     أضف إعلانك هنا
                                 </button>
                             </div>
