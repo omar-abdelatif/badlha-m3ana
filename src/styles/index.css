@@ -36,9 +36,10 @@ ul{
 }
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
 /* BODY */
 body {
-	background-color: #f6f7f9;
+	background-color: #5B95AA;
 }
 /* SCROLL */
 .scroll-btn {
@@ -66,6 +67,9 @@ body {
 	transform: translateY(0);
 }
 /* NavBar */
+nav{
+	background-color: #095473;
+}
 .menu {
 	display: none;
 }
@@ -73,6 +77,9 @@ body {
 	font-size: 2.5em;
 	font-weight: bolder;
 	font-family: Lalezar;
+	margin-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 .navbar-brand:focus {
 	outline: none !important;
@@ -83,14 +90,35 @@ body {
 .sell {
 	margin-right: 35px;
 }
+.login button{
+	border-radius: 50px;
+}
+.sell a{
+	margin-left: 10px;
+	border-radius: 50px;
+}
+.sell button{
+	border-radius: 50px;
+}
+.areas{
+	margin-top: 30px;
+	margin-right: 0;
+}
 .areas select {
-	width: 160px;
+	width: 100%;
+	border-radius: 50px;
+}
+.areas option{
+	font-size: 1.2em;
+	font-weight: 300;
+	font-family: Rakkas;
 }
 .search input {
-	width: 320px;
+	width: 350px;
+	border-radius: 50px;
 }
 .areas ::-webkit-scrollbar {
-	width: 0px;
+	display: none;
 }
 .areas option {
 	padding: 10px 0 !important;
@@ -103,7 +131,7 @@ body {
 	margin-right: 20px;
 }
 .lang select{
-	border-radius: 10px;
+	border-radius: 50px;
 	width: 100px;
 	height: 40px;
 }
@@ -112,9 +140,15 @@ body {
 	top: 0px;
 	left: 0;
 	width: 100%;
-	background: #fff;
+	background-color: #095473;
 	z-index: 99999;
 	transition: all 0.5s;
+}
+.nav-data{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
 }
 /* SLOGAN */
 .slogan {
@@ -151,7 +185,7 @@ body {
 }
 /* PRODUCT List */
 .product-item {
-	box-shadow: 0 0 15px #000;
+	box-shadow: 0 0 25px #fff;
 	border-radius: 50px;
 	margin-bottom: 30px;
 	width: fit-content;
@@ -160,11 +194,17 @@ body {
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
 }
+.product-info{
+	background-color: #095473;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
 .product-texts span {
 	font-size: 0.8em;
 	font-weight: 400;
 	padding-left: 5px;
 	padding-right: 5px;
+	color: #fff;
 }
 .product-title {
 	font-weight: bolder;
@@ -172,14 +212,21 @@ body {
 }
 .product-title a {
 	font-size: 0.7em;
-	color: #000;
+	color: #fff;
 	font-weight: bold;
+	transition: all 0.2s;
+}
+.product-title a:hover{
+	color: #B9D6BC;
 }
 .product-texts {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 10px 5px;
+}
+.product-texts i{
+	color: #fff;
 }
 .pagination{
 	justify-content: center;

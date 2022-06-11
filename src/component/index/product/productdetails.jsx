@@ -39,7 +39,8 @@ function ProductDetails({ data }) {
                                     <img src={Product.img} alt={Product.name} />
                                 </div>
                                 <div className="text-data">
-                                    <h1>{Product.name}</h1>
+                                    <h1 className='title'>{Product.name}</h1>
+                                    <p className='price'>{Product.price}</p>
                                 </div>
                             </div>
                         )}

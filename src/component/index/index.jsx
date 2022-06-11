@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollBtn from './scrollbtn';
 import Categories from './categories/categories';
-import Slogan from './slogan';
+// import Slogan from './slogan';
 import ProductList from './product/productlist';
 function Index({ data }) {
     // console.log(data);
@@ -43,7 +43,7 @@ function Index({ data }) {
     return (
         <React.Fragment>
             <ScrollBtn />
-            <Slogan />
+            {/* <Slogan /> */}
             <Categories data={data} />
             <ProductList data={data} displayproducts={displayProducts} pagecount={pageCount} changePage={changepage} />
         </React.Fragment>

@@ -5,13 +5,15 @@
             "name": "Madeira",
             "date": "22-10-2021",
             "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
-            "city": "الجيزة"
+            "city": "الجيزة",
+            "time": "منذ ثلاث ساعات"
         },
         {
             "name": "Fish - Halibut",
             "date": "12-12-2021",
-            "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2709844462/thumbnails/thumbnail_0.jpg",
-            "city": "الدقي"
+            "img": "https://tajircom.fra1.digitaloceanspaces.com/photos/2335212803/thumbnails/thumbnail_0.jpg",
+            "city": "الدقي",
+            "time": "منذ ثلاث ساعات"
         },
         {
             "name": "Bacardi Breezer",
@@ -254,6 +256,95 @@
             "icon": "fad fa-couch",
             "class": "cat-item-icon bg-danger bg-gradient",
             "catname": "أثاث"
+        }
+    ],
+    "Area": [
+        {
+            "name": "المنطقة"
+        },
+        {
+            "name": "القاهرة"
+        },
+        {
+            "name": "الجيزة"
+        },
+        {
+            "name": "الأسكندرية"
+        },
+        {
+            "name": "الدقهلية"
+        },
+        {
+            "name": "الشرقية"
+        },
+        {
+            "name": "المنوفية"
+        },
+        {
+            "name": "القليوبية"
+        },
+        {
+            "name": "البحيرة"
+        },
+        {
+            "name": "الغربية"
+        },
+        {
+            "name": "بور سعيد"
+        },
+        {
+            "name": "دمياط"
+        },
+        {
+            "name": "الإسماعلية"
+        },
+        {
+            "name": "السويس"
+        },
+        {
+            "name": "كفر الشيخ"
+        },
+        {
+            "name": "الفيوم"
+        },
+        {
+            "name": "بني سويف"
+        },
+        {
+            "name": "مطروح"
+        },
+        {
+            "name": "شمال سيناء"
+        },
+        {
+            "name": "جنوب سيناء"
+        },
+        {
+            "name": "المنيا"
+        },
+        {
+            "name": "أسيوط"
+        },
+        {
+            "name": "سوهاج"
+        },
+        {
+            "name": "قنا"
+        },
+        {
+            "name": "البحر الأحمر"
+        },
+        {
+            "name": "الأقصر"
+        },
+        {
+            "name": "أسوان"
+        },
+        {
+            "name": "الوادي الجديد"
+        },
+        {
+            "name": "أسوان"
         }
     ],
     "CategoriesData": [
