@@ -222,6 +222,7 @@ ul{
 .product-title {
 	font-weight: bolder;
 	padding-bottom: 15px;
+	text-align: right !important;
 }
 .product-title a {
 	font-size: 0.7em;
@@ -348,7 +349,11 @@ ul{
 }
 /* NEWSLETTER */
 .newsletter {
-	background: rgb(153, 151, 151);
+	background: linear-gradient(
+		210deg,
+		rgba(17, 188, 232, 1) 0%,
+		rgba(50, 78, 161, 1) 100%
+	);
 	padding: 50px 0;
 }
 .newsletter-content h2{
@@ -356,6 +361,7 @@ ul{
 	font-weight: bolder;
 	font-family: Lalezar;
 	margin-bottom: 20px;
+	color: #fff;
 }
 .newsletter-form input{
 	width: 60%;
