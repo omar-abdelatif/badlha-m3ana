@@ -158,6 +158,34 @@ ul{
 	align-items: center;
 	padding: 0 20px;
 }
+.modal-footer{
+	justify-content: space-between;
+}
+.modal-body .modal-footer{
+	padding: 0;
+	padding-top: 20px;
+}
+.modal-header{
+	justify-content: space-between;
+}
+.modal-header .btn-close{
+	margin: 0;
+}
+.form-check{
+	display: flex;
+	padding-left: 0;
+	align-items: center;
+	justify-content: center;
+}
+.form-check label{
+	margin-left: 10px;
+}
+.form-group label{
+	margin-bottom: 10px;
+}
+.form-group input{
+	margin-bottom: 10px;
+}
 /* SLOGAN */
 .slogan {
 	background: linear-gradient(

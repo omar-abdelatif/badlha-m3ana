@@ -5,7 +5,6 @@ import Categories from './categories/categories';
 import Slogan from './slogan';
 import ProductList from './product/productlist';
 function Index({ data }) {
-    // console.log(data);
     const [products] = useState(data.ProductList.slice(0, 10000));
     const [pageNumber, setPageNumber] = useState(0);
     const productsPerPage = 10;
