@@ -7,3 +7,12 @@ window.addEventListener("scroll", function () {
         Scroll.classList.remove("fadeIn");
     }
 });
+// FIXED NAVBAR
+const navbar = document.getElementById('navbar');
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 120) {
+        navbar.classList.add("fixed");
+    } else {
+        navbar.classList.remove("fixed");
+    }
+});
