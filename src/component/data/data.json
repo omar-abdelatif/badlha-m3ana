@@ -317,6 +317,12 @@
             "icon": "fad fa-couch",
             "class": "cat-item-icon bg-danger bg-gradient",
             "catname": "أثاث"
+        },
+        {
+            "id": 12,
+            "icon": "fad fa-scroll",
+            "class": "cat-item-icon bg-info bg-gradient",
+            "catname": "ورقيات"
         }
     ],
     "Area": [

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 function Categories({ data }) {
     return (
         <section className="categories">
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
                         <div className="row">
@@ -18,15 +18,7 @@ function Categories({ data }) {
                                     </div>
                                 </div>
                             ))}
-                            <div className="col-12">
-                                <div className="areas">
-                                    <select name="" id="" className="form-control">
-                                        {data.Area.map(item => (
-                                            <option key={item.name} value={item.name}>{item.name}</option>
-                                        ))}
-                                    </select>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
