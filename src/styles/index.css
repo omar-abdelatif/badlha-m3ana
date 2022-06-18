@@ -37,6 +37,7 @@ ul{
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 /* SCROLL */
 .scroll-btn {
 	position: fixed;
@@ -345,7 +346,7 @@ ul{
 }
 .share-section ul{
 	list-style: none;
-	padding-left: 40px;
+	padding-left: 10px;
 }
 .share-section ul li{
 	margin-bottom: 30px;
@@ -368,12 +369,23 @@ ul{
 	height: 400px;
 }
 .thumbnail img{
-	width: 500px;
+	width: 450px;
 	height: 100%;
 	border-radius: 10px;
 }
 .text-data{
 	margin-right: 20px;
+}
+.bg-white{
+	padding: 30px;
+	border-radius: 30px;
+	display: flex;
+}
+.bg-white .text-data p{
+	margin-top: 20px;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: Cairo;
 }
 /* NEWSLETTER */
 .newsletter {

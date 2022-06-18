@@ -35,12 +35,14 @@ function ProductDetails({ data }) {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="thumbnail">
-                                    <img src={Product.img} alt={Product.name} />
-                                </div>
-                                <div className="text-data">
-                                    <h1 className='title'>{Product.name}</h1>
-                                    <p className='price'>{Product.price}</p>
+                                <div className="bg-white">
+                                    <div className="thumbnail">
+                                        <img src={Product.img} alt={Product.name} />
+                                    </div>
+                                    <div className="text-data">
+                                        <h1 className='title'>{Product.name}</h1>
+                                        <p className='price'>{Product.description}</p>
+                                    </div>
                                 </div>
                             </div>
                         )}
