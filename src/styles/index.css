@@ -222,10 +222,10 @@ ul{
 }
 /* PRODUCT List */
 .product-item {
-	box-shadow: 0 0 25px #000;
-	border-radius: 50px;
+	box-shadow: 0 0 10px #000;
+	border-radius: 15px;
 	margin-bottom: 30px;
-	width: fit-content;
+	overflow: hidden;
 }
 .product-thumb img {
 	border-top-left-radius: 50px;
@@ -256,6 +256,7 @@ ul{
 .product-title a {
 	font-size: 0.7em;
 	color: #000;
+	font-family: 'Cairo';
 	font-weight: bold;
 	transition: all 0.2s;
 }
@@ -366,7 +367,9 @@ ul{
 	font-size: 1.5rem;
 }
 .thumbnail{
-	height: 400px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 10px;
 }
 .thumbnail img{
 	width: auto;
@@ -410,6 +413,47 @@ table tr td button i{
 }
 table tr td input {
 	border: none;
+}
+table tr td:last-child{
+	width: 80%;
+}
+/* SIGN UP */
+.signup{
+	background-color: #f6f7f9;
+	padding: 50px 0;
+}
+.signup-form{
+	width: 80%;
+	margin: 0 auto;
+	border: 2px solid #999;
+	border-radius: 30px;
+	padding: 25px;
+}
+.form-text{
+	text-align: right;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.form-text h2{
+	text-decoration: underline;
+}
+.form-text p{
+	margin-top: 20px;
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+.signup-form form > div{
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.signup-form form > div input,
+.signup-form form > div select{
+	width: 250px;
+	border-radius: 30px;
+	
+}
+input[type=number]::-webkit-inner-spin-button{
+	appearance: none;
 }
 /* NEWSLETTER */
 .newsletter {

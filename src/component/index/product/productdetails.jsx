@@ -68,7 +68,13 @@ function ProductDetails({ data }) {
                                         </div>
                                         <div className="bg-white">
                                             <div className="thumbnail">
-                                                <img src={Product.img} alt={Product.name} />
+                                                {/* <img src={Product.img} alt={Product.name} /> */}
+                                                <div className='img-details' style={{
+                                                    backgroundImage: `url(${Product.img})`,
+                                                    backgroundSize: 'cover',
+                                                    backgroundPosition: 'center',
+                                                    height: '100%'
+                                                }} />
                                             </div>
                                             <div className="text-data">
                                                 <table className="table table-striped table-bordered text-center">

@@ -5,6 +5,8 @@ import Categories from './categories/categories';
 import Slogan from './slogan';
 import ProductList from './product/productlist';
 function Index({ data }) {
+    const Img = data.Img;
+    console.log(Img);
     const [products] = useState(data.ProductList.slice(0, 10000));
     const [pageNumber, setPageNumber] = useState(0);
     const productsPerPage = 10;
@@ -14,7 +16,14 @@ function Index({ data }) {
             <div className="product-item">
                 <div className="product-thumb text-center">
                     <Link to={`/product/${product.name}`}>
-                        <img width={270} height={270} src={product.img} alt={product.name} />
+                        {/* <img width={270} height={270} src={product.img} alt={product.name} /> */}
+                        <div className="bg-img" style={{
+                            backgroundImage: `url(${product.img})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            width: 'auto',
+                            height: '300px'
+                        }} />
                     </Link>
                 </div>
                 <div className="product-info">

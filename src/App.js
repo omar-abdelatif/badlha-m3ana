@@ -3,6 +3,7 @@ import Navbar from './component/nav';
 import Index from './component/index/index';
 import ProductDetails from './component/index/product/productdetails';
 import CategoriesData from './component/index/categories/categoriesdata';
+import Signup from './component/signup';
 import NewsLetter from './component/newsletter';
 import UpperFooter from './component/footer/upperfooter';
 import Footer from './component/footer/footer';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Index data={Data} />} />
         <Route path="/product/:name" element={<ProductDetails data={Data} />} />
         <Route path="/categories/:catname" element={<CategoriesData />} />
+        <Route path="/signup" element={<Signup data={Data} />} />
       </Routes>
       <NewsLetter />
       <UpperFooter />
