@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
+import Logo from '../assets/favicon.png';
 function Navbar() {
     return (
         <nav id='navbar'>
             <div className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
-                    <Link className="navbar-brand" to="/">بدلها معايا</Link>
+                    <Link className="navbar-brand" to="/">
+                        <img src={Logo} alt="logo" width={100} height={100} />
+                    </Link>
                     <button className="btn btn-primary menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                         <i className="fad fa-bars"></i>
                     </button>
