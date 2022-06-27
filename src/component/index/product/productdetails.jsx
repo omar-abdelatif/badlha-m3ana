@@ -1,7 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import RelatedItems from './related';
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import { EffectCards } from "swiper";
+import "swiper/css/navigation";
+import { Navigation, Autoplay } from "swiper";
+// import { EffectCards } from "swiper";
 function ProductDetails({ data }) {
     console.log(data.ProductList);
     const { name } = useParams();
@@ -9,7 +15,7 @@ function ProductDetails({ data }) {
     const [Product] = [...ProductList.filter((e) => {
         return e.name === name
     })]
-    console.log(Product);
+    // console.log(Product);
     return (
         <React.Fragment>
             <section className="product-details">
@@ -40,7 +46,6 @@ function ProductDetails({ data }) {
                                             </div>
                                         </div>
                                     </div>
-
                                     <div className="content-section text-right">
                                         <div className="share-section">
                                             <ul>
@@ -69,12 +74,54 @@ function ProductDetails({ data }) {
                                         <div className="bg-white">
                                             <div className="thumbnail">
                                                 {/* <img src={Product.img} alt={Product.name} /> */}
-                                                <div className='img-details' style={{
+                                                {/* <div className='img-details' style={{
                                                     backgroundImage: `url(${Product.img})`,
                                                     backgroundSize: 'cover',
                                                     backgroundPosition: 'center',
                                                     height: '100%'
-                                                }} />
+                                                }} /> */}
+                                                <Swiper
+                                                    effect={"cards"}
+                                                    grabCursor={true}
+                                                    slidesPerView={1}
+                                                    spaceBetween={30}
+                                                    loop={true}
+                                                    autoplay={{
+                                                        delay: 2500,
+                                                        disableOnInteraction: false,
+                                                    }}
+                                                    navigation={true}
+                                                    modules={[Autoplay, Navigation, EffectCards]}
+                                                    className="mySwiper"
+                                                >
+                                                    <SwiperSlide>
+                                                        <img src={Product.img} alt={Product.name} />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <img src={Product.img} alt={Product.name} />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <img src={Product.img} alt={Product.name} />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <img src={Product.img} alt={Product.name} />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <img src={Product.img} alt={Product.name} />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <img src={Product.img} alt={Product.name} />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <img src={Product.img} alt={Product.name} />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <img src={Product.img} alt={Product.name} />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <img src={Product.img} alt={Product.name} />
+                                                    </SwiperSlide>
+                                                </Swiper>
                                             </div>
                                             <div className="text-data">
                                                 <table className="table table-striped table-bordered text-center">
@@ -127,8 +174,6 @@ function ProductDetails({ data }) {
             </section>
             <RelatedItems data={data} />
         </React.Fragment>
-
     );
 }
-
 export default ProductDetails;
